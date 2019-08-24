@@ -16,7 +16,7 @@ import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 
 import "./css/App.css";
 
-const url="https://nzjalic-ecommerce.herokuapp.com/";
+const url="https://nzjalic-ecommerce.herokuapp.com";
 
 
 class App extends Component {

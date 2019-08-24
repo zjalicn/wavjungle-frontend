@@ -15,7 +15,7 @@ export default class StorefrontPage extends Component {
   }
 
   componentDidMount() {
-    const url="https://nzjalic-ecommerce.herokuapp.com/";
+    const url="https://nzjalic-ecommerce.herokuapp.com";
     axios.get(`${url}/api/getProducts`)
     .then(res => {
       this.setState({ 

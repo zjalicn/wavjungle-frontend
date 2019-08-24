@@ -5,7 +5,7 @@ import axios from "axios";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import HomeJumbotron from "./HomeJumbotron";
 
-const url="https://nzjalic-ecommerce.herokuapp.com/";
+const url="https://nzjalic-ecommerce.herokuapp.com";
 
 export default class HomePage extends Component {
   constructor(props) {

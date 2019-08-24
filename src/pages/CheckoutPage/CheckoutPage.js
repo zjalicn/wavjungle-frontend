@@ -11,7 +11,7 @@ import PromoCode from "../../components/PromoCode/PromoCode";
 import { connect } from "react-redux";
 import { handleChange } from '../../actions/promoCodeActions';
 
-const url="https://nzjalic-ecommerce.herokuapp.com/";
+const url="https://nzjalic-ecommerce.herokuapp.com";
 
 
 class CheckoutPage extends Component {

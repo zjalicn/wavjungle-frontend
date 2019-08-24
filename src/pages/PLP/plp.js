@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
 import axios from "axios";
 
-const url="https://nzjalic-ecommerce.herokuapp.com/";
+const url="https://nzjalic-ecommerce.herokuapp.com";
 
 
 export default class PLP extends Component {
