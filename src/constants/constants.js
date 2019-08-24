@@ -1,0 +1,21 @@
+export const userConstants = {
+    REGISTER_REQUEST: "REGISTER_REQUEST",
+    REGISTER_SUCCESS: "REGISTER_REQUEST",
+    REGISTER_FAILURE: "REGISTER_FAILURE",
+
+    LOGIN_REQUEST: "LOGIN_REQUEST",
+    LOGIN_SUCCESS: "LOGIN_SUCCESS",
+    LOGIN_FAILURE: "LOGIN_FAILURE",
+    
+    LOGOUT: "USERS_LOGOUT"
+}
+
+export const alertConstants = {
+    SUCCESS: "ALERT_SUCCESS",
+    ERROR: "ALERT_ERROR",
+    CLEAR: "ALERT_CLEAR"
+}
+
+export const promoCodeConstants = {
+    PROMO_CODE: "PROMO_CODE"
+}

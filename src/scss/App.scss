@@ -1,0 +1,202 @@
+* {
+  font-family: 'IBM Plex Serif', cursive;
+}
+
+body {
+ padding-bottom: 20px ;
+ 
+}
+
+.container {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .purchase-card {
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+  }
+  
+  .purchase-card > .show-grid {
+    padding-bottom: 1.5em;
+  }
+  
+  .item-details-button:focus {
+    outline: none;
+  }
+  
+  .product-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1em;
+    text-align: center;
+    line-height: 2em;
+    background: white;
+    color: black !important;
+    border-radius: 5px;
+    a:link{
+      text-decoration: none;
+    }
+
+    & .card-name {
+        padding: 10px;
+        font-weight: bolder;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    & .card-price {
+        padding: 0px;
+        font-size: 3em; 
+        text-decoration: none;
+    }
+
+    a {
+      margin: 0 2%;
+    }
+  }
+
+  .button-spacing {
+    a {
+      margin: 0 auto;
+      button {
+        margin: 2% 2% 0 2%;
+      }
+    }
+  }
+
+  .header {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height:10vh;
+    vertical-align: baseline;
+    padding: 0 3em;
+    text-align: right;
+  }
+
+  .jumbotron {
+    background-image: url('https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    min-height: 25em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 0px;
+    line-height: 0.6;
+
+    .jumbotron-card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background: rgba(255,255,255,0.9);
+      text-align: center;
+      min-height: 15em;
+      border-radius: 5px;
+
+      h1, p {
+        padding-top: 20px;
+        margin: 0 auto;
+        line-height: 1;
+      }
+
+      .jumbotron-desc {
+        @media (max-width: 992px){
+          display: none;
+        }
+      }
+    }
+  }
+
+  .main-page-featured{
+    text-align: center;
+    margin-top: 1em;  
+    font-size: 3em;
+  }
+
+  .jumbotron-new-text{
+    margin-top:7%;
+    line-height: 0.2;
+  }
+
+    .login-card {
+      text-align: center;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 20px 0;
+
+      button {
+        margin-top: 20px;
+      }
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      input {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh;
+    }
+
+    .header-login-info { 
+      padding-top: 20px;
+      list-style: none;
+      line-height: 10px;
+    }
+
+    .navbar-brand {
+      font-size: 1.5em;
+    }
+
+    .navbar-text {
+      padding-right: 10px;
+      font-size: 0.9em;
+    }
+
+    .button {
+      min-width: 5em;
+    }
+
+    .coupon-code {
+      font-size: 2em;
+      display: inline;
+      padding: 0 2%;
+    }
+
+    .code {
+      font-size: 1.5em;  
+    }
+
+    .plp-top-info {
+      padding: 10px 0;
+
+      h1, h3 {
+        font-size: 3em;
+      }
+    }
+
+    .cart-logout a{
+      text-align: right;
+      padding: 0 1em;
+    }
+
+    .mr-auto {
+      margin-right: 10px !important;
+      margin-left: auto !important;
+    }
+
+    .navbar-nav {
+      a {
+        margin-left: auto !important;
+      }
+    }
+
+    .product-card-link {
+      color: black;
+    }
+
+    .checkout-remove-x {
+      &:hover {
+        color: red;
+        cursor: pointer
+      }
+    }
