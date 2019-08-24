@@ -15,8 +15,8 @@ export default class StorefrontPage extends Component {
   }
 
   componentDidMount() {
-    const url= 'api/getProducts';
-    axios.get(url)
+    const url="https://nzjalic-ecommerce.herokuapp.com/";
+    axios.get(`${url}/api/getProducts`)
     .then(res => {
       this.setState({ 
         products: res.data //update state with product collection

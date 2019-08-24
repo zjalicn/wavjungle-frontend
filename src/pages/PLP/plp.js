@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
 import axios from "axios";
 
+const url="https://nzjalic-ecommerce.herokuapp.com/";
+
+
 export default class PLP extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +14,7 @@ export default class PLP extends Component {
   }
 
   componentDidMount() {
-    axios.get(`/api/plp/${this.props.match.params.pid}`).then(res => {
+    axios.get(`${url}/api/plp/${this.props.match.params.pid}`).then(res => {
       this.setState({
         productInfo: res.data[0] //update state with product collection
       });

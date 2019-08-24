@@ -16,17 +16,21 @@ import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 
 import "./css/App.css";
 
-class App extends Component {
+const url="https://nzjalic-ecommerce.herokuapp.com/";
 
+
+class App extends Component {
+  
   constructor(props) {
     super(props);
+
     this.state = { 
       cart: JSON.parse(localStorage.getItem("cart")) || []
     }
   }
   
   getProductById = id => {
-    axios.get(`/api/plp/${id}`).then(res => {
+    axios.get(`${url}/api/plp/${id}`).then(res => {
       return res.data;
     }); 
   };
