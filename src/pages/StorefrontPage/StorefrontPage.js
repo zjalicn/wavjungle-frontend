@@ -3,6 +3,9 @@ import { Container, Row } from 'react-bootstrap';
 import axios from 'axios';
 import ProductCard from '../../components/ProductCard/ProductCard';
 
+const proxyurl="https://cors-anywhere.herokuapp.com/";
+const url="https://nzjalic-ecommerce.herokuapp.com";
+
 export default class StorefrontPage extends Component {
 
   constructor(props) {
@@ -15,7 +18,6 @@ export default class StorefrontPage extends Component {
   }
 
   componentDidMount() {
-    const url="https://nzjalic-ecommerce.herokuapp.com";
     axios.get(`${url}/api/getProducts`)
     .then(res => {
       this.setState({ 

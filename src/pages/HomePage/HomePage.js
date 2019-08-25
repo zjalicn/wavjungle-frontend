@@ -5,6 +5,7 @@ import axios from "axios";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import HomeJumbotron from "./HomeJumbotron";
 
+const proxyurl="https://cors-anywhere.herokuapp.com/";
 const url="https://nzjalic-ecommerce.herokuapp.com";
 
 export default class HomePage extends Component {
@@ -16,7 +17,7 @@ export default class HomePage extends Component {
   }
 
   componentDidMount() {
-    axios.get(`${url}/api/getNewestProducts`).then(res => {
+    axios.get(`${proxyurl}${url}/api/getNewestProducts`).then(res => {
       this.setState({
         newestProducts: res.data //update state with product collection
       });

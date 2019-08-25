@@ -16,6 +16,7 @@ import { PrivateRoute } from './components/PrivateRoute/PrivateRoute';
 
 import "./css/App.css";
 
+const proxyurl="https://cors-anywhere.herokuapp.com/";
 const url="https://nzjalic-ecommerce.herokuapp.com";
 
 
@@ -30,7 +31,7 @@ class App extends Component {
   }
   
   getProductById = id => {
-    axios.get(`${url}/api/plp/${id}`).then(res => {
+    axios.get(`${proxyurl}${url}/api/plp/${id}`).then(res => {
       return res.data;
     }); 
   };

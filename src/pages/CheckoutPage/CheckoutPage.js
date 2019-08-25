@@ -11,8 +11,8 @@ import PromoCode from "../../components/PromoCode/PromoCode";
 import { connect } from "react-redux";
 import { handleChange } from '../../actions/promoCodeActions';
 
+const proxyurl="https://cors-anywhere.herokuapp.com/";
 const url="https://nzjalic-ecommerce.herokuapp.com";
-
 
 class CheckoutPage extends Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class CheckoutPage extends Component {
 
   componentDidMount = () => {
     this.state.cart.map(id => {
-      axios.get(`${url}/api/plp/${id}`).then(res => {
+      axios.get(`${proxyurl}${url}/api/plp/${id}`).then(res => {
         this.setState({
           itemsInCart: [...this.state.itemsInCart, res.data[0]], //update state with product collection
           subtotal: this.state.subtotal + parseInt(res.data[0].price),
